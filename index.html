@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherAPI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contents">
+      <h1>🌤️Weather App</h1>
+      <input id="userInput" placeholder="Tokyo, Osaka, London" />
+      <button id="searchButton">search</button>
+      <div class="mainContents">
+        <h3 id="loadingtext"></h3>
+        <h3 id="cityName">都市名</h3>
+        <ul id="mainul">
+          <li id="weather">[weather]</li>
+          <li id="temp">[temp]</li>
+          <li id="hum">[hum]</li>
+          <li id="wind">[wind]</li>
+        </ul>
+      </div>
+      <!--mainContents-->
+      <h4>🕰️Search History</h4>
+      <ul id="historyUl"></ul>
+    </div>
+    <!--contents-->
+
+    <footer>
+      <p id="errorP"></p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
